@@ -2,7 +2,7 @@ import Header from "./Header";
 import Footer from "./Footer";
 import MainContent from "./MainContent";
 import UserProfile from "./components/UserProfile";
-import Counter from "./components/Counter"; // ✅ import Counter
+import Counter from "./components/Counter"; // ✅ must be here
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
         age={24} 
         bio="Frontend developer in progress 🚀" 
       />
-      <Counter /> {/* ✅ use Counter here */}
+      <Counter /> {/* ✅ must be rendered */}
       <Footer />
     </div>
   );
