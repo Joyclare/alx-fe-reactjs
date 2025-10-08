@@ -14,13 +14,13 @@ function RegistrationForm() {
       alert("All fields are required!");
       return;
     }
-    console.log("User registered:", formData);
+    console.log("Form submitted:", formData);
   };
 
   return (
     <form onSubmit={handleSubmit}>
       <input name="username" value={formData.username} onChange={handleChange} placeholder="Username" />
-      <input name="email" type="email" value={formData.email} onChange={handleChange} placeholder="Email" />
+      <input name="email" value={formData.email} onChange={handleChange} placeholder="Email" />
       <input name="password" type="password" value={formData.password} onChange={handleChange} placeholder="Password" />
       <button type="submit">Register</button>
     </form>
